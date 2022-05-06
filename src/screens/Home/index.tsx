@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useTheme } from 'styled-components';
 import { StatusBar, StyleSheet, BackHandler } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -21,7 +21,7 @@ import { api } from '../../services/api';
 import { CarDTO } from '../../dtos/CarDTO';
 
 import { Car } from '../../components/Car';
-import { Load } from '../../components/Load';
+import { LoadAnimation } from '../../components/LoadAnimation';
 
 import {
   Container,
@@ -88,11 +88,25 @@ export function Home(){
     fetchCars()
   }, []);
 
-  useEffect(() => {
-    BackHandler.addEventListener('hardwareBackPress', () => {
-      return true;
-    })
-  }, []);
+  //*Código Usado na aula da Rocketseat para previnir voltar a splash com o botao do aparelho de voltar
+  //Mas acaba desabilitando o botao de voltar de todas as telas
+
+  // useEffect(() => {
+  //   BackHandler.addEventListener('hardwareBackPress', () => {
+  //     return true;
+  //   })
+  // }, []);
+
+  //*FIM
+
+  // Código retirado do fórum para previnir voltar a splash apenas na pagina de home
+  useFocusEffect(() => {
+    const backHandler = BackHandler.addEventListener(
+        'hardwareBackPress',
+        () => true
+    );
+    return () => backHandler.remove();
+  });
 
   return (
     <Container>
@@ -115,7 +129,7 @@ export function Home(){
           }
         </HeaderContent>
       </Header>
-      { loading ? <Load /> :
+      { loading ? <LoadAnimation /> :
         <CarList
           data={cars}
           keyExtractor={item => item.id}
