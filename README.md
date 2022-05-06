@@ -1,7 +1,7 @@
 <h1 align="center"> RentX - React Native </h1>
 
   <p align="center">
-   <img src="assets/rentX.gif" width="400">
+   <img src="assets/rentX.gif" width="300">
   </p>
 
 <h2>🚀 Descrição</h2>
