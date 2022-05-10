@@ -8,6 +8,7 @@ import {
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useTheme } from 'styled-components';
 
+import { Confirmation } from '../../Confirmation';
 import { BackButton } from '../../../components/BackButton';
 import { Bullet } from '../../../components/Bullet';
 import { PasswordInput } from '../../../components/PasswordInput';
@@ -55,6 +56,11 @@ export function SignUpSecondStep(){
     }
 
     //Enviar para API e Cadastrar
+    navigation.navigate('Confirmation', {
+      nextScreenRoute: 'SignIn', 
+      title: 'Conta criada!', 
+      message: `Agora é só fazer login\ne aproveitar!`,
+    });
   }
 
   return (
