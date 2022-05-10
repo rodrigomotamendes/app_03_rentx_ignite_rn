@@ -5,7 +5,7 @@
 <hr size="2" width="100%" align="center" noshade>
 
   <p align="center">
-   <img src="assets/rentX.gif" width="300">
+   <img src="mobile-app-rentx/assets/rentX.gif" width="300">
   </p>
 
 <h2>🚀 Descrição</h2>
