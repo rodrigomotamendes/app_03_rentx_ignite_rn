@@ -47,7 +47,7 @@ export const PhotoContainer = styled.View`
   margin-top: 48px;
 `;
 
-export const Photo  = styled.Image`
+export const Photo = styled.Image`
   width: 180px;
   height: 180px;
   border-radius: 90px;
