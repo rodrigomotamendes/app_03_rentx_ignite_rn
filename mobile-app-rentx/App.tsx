@@ -16,6 +16,12 @@ import {
 import { Routes } from './src/routes';
 import theme from './src/styles/theme';
 
+import { LogBox } from 'react-native';
+
+LogBox.ignoreLogs([
+  'Non-serializable values were found in the navigation state'
+]);
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
