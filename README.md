@@ -78,7 +78,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 <h2>🔥 Executando o projeto</h2>
 
-<p>No arquivo <b>api localizado na pasta "src/services/api"</b> substituir o endereço de ip para o da sua máquina. </p>
+<p>No arquivo <b>api localizado na pasta "mobile-app-rentx/src/services/api"</b> substituir o endereço de ip para o da sua máquina. </p>
 
 <p>Na pasta " api " utilize o comando <b>yarn</b> ou o <b>npm install</b> para instalar as dependências do projeto.
 Em seguida, inicie o projeto. </p>
