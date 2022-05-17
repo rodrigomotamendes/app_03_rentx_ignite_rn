@@ -44,6 +44,21 @@
  <li>
   <a href='https://github.com/lottie-react-native/lottie-react-native' target="_blank" rel="nofollow">Lottie React Native</a>
  </li>
+ <li>
+  <a href='https://github.com/Nozbe/WatermelonDB' target="_blank" rel="nofollow">WatermelonDB</a>
+ </li>
+ <li>
+  <a href='https://github.com/react-native-netinfo/react-native-netinfo' target="_blank" rel="nofollow">React Native Netinfo</a>
+ </li>
+ <li>
+  <a href='https://docs.expo.dev/versions/latest/sdk/imagepicker/' target="_blank" rel="nofollow">ImagePicker</a>
+ </li>
+ <li>
+  <a href='https://github.com/DylanVann/react-native-fast-image' target="_blank" rel="nofollow">React Native FastImage</a>
+ </li>
+ <li>
+  <a href='https://github.com/jquense/yup' target="_blank" rel="nofollow">Yup</a>
+ </li>
 </u>
 
 <h2>🔖 Layout</h2>
@@ -63,15 +78,23 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 <h2>🔥 Executando o projeto</h2>
 
-<p>Nos arquivos <b>package.json localizado na raiz do projeto</b> e <b>api localizado na pasta "src/services/api"</b>
-substituir o endereço de ip para o da sua máquina. </p>
+<p>No arquivo <b>api localizado na pasta "src/services/api"</b> substituir o endereço de ip para o da sua máquina. </p>
 
-<p>Utilize o <b>yarn</b> ou o <b>npm install</b> para instalar as dependências do projeto.
+<p>Na pasta " api " utilize o comando <b>yarn</b> ou o <b>npm install</b> para instalar as dependências do projeto.
 Em seguida, inicie o projeto. </p>
 
 <div class="highlight highlight-source-shell">
 <pre>
-expo start
+yarn start
+</pre>
+</div>
+
+<p>Na pasta " mobile-app-rentx " utilize o comando <b>yarn</b> ou o <b>npm install</b> para instalar as dependências do projeto.
+Em seguida, inicie o projeto. </p>
+
+<div class="highlight highlight-source-shell">
+<pre>
+yarn android
 </pre>
 </div>
 
